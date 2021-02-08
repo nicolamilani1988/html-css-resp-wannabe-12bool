@@ -10,7 +10,7 @@
   margin: auto;
   /* debug */
   /* min-height: 200px; */
-  background-color: green;
+  /* background-color: green; */
 }
 
 .row:after{
@@ -28,9 +28,12 @@
   background-color: pink;
 }
 
-/* regole dimensionamento colonne */
+
+/* REGOLE DESKTOP */
+
 @media all and (min-width: 992px){
 
+  /* regole dimensionamento colonne */
   .col-lg-1{
     width: calc((100% / 12) * 1);
   }
@@ -130,12 +133,16 @@
 
 }
 
+
+/* REGOLE TABLET */
 @media all and (max-width: 991px) and (min-width: 768px){
 
-  /* .row{
-    width: 100%;
-  } */
+  [class*="col-"]{
+    /* debug */
+    background-color: yellow;
+  }
 
+  /* regole dimensionamento colonne */
   .col-md-1{
     width: calc((100% / 12) * 1);
   }
@@ -236,12 +243,15 @@
 }
 
 
+/* REGOLE SMARTPHONE */
 @media all and (max-width: 767px){
 
-  /* .row{
-    width: 100%;
-  } */
+  [class*="col-"]{
+    /* debug */
+    background-color: blue;
+  }
 
+  /* regole dimensionamento colonne */
   .col-xs-1{
     width: calc((100% / 12) * 1);
   }
@@ -288,7 +298,7 @@
 
   .col-xs-12{
     width: 100%;
-  } */
+  }
 
   /* regole distanziamento colonne */
   .col-xs-offset-1{
