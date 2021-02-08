@@ -5,8 +5,12 @@
   box-sizing: border-box;
 }
 
+body{
+  padding: 10px;
+}
+
 .container{
-  max-width: 1170px;
+  max-width: 100%;
   margin: auto;
   /* debug */
   /* min-height: 200px; */
@@ -22,10 +26,9 @@
 [class*="col-"]{
   float: left;
   /* debug */
-  border: 1px solid black;
-  line-height: 200px;
-  min-height: 200px;
-  background-color: pink;
+  /* border: 1px solid black; */
+  /* min-height: 200px; */
+  /* background-color: pink; */
 }
 
 
@@ -137,9 +140,13 @@
 /* REGOLE TABLET */
 @media all and (max-width: 991px) and (min-width: 768px){
 
+  body{
+    padding: 0;
+  }
+
   [class*="col-"]{
     /* debug */
-    background-color: yellow;
+    /* background-color: yellow; */
   }
 
   /* regole dimensionamento colonne */
@@ -246,9 +253,13 @@
 /* REGOLE SMARTPHONE */
 @media all and (max-width: 767px){
 
+  body{
+    padding: 0;
+  }
+
   [class*="col-"]{
     /* debug */
-    background-color: blue;
+    /* background-color: blue; */
   }
 
   /* regole dimensionamento colonne */

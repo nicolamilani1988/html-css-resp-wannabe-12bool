@@ -1,5 +1,10 @@
+/* regole generali */
 .row{
   text-align: center;
+}
+
+img {
+  height: 200px;
 }
 
 .row:first-child{
@@ -14,7 +19,24 @@
   padding: 10px;
 }
 
-.row.first, .row.second, .row.third{
+#steps, #why{
+  background-color: lightgrey;
+  width: 100%;
+}
+
+
+/* regole terza sezione WHY */
+#why .row{
   margin-top: 80px;
-  padding: 0 auto;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+#why h3, #why span{
+  margin: 10px 0;
+  display: block;
 }
