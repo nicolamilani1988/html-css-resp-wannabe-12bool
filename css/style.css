@@ -1,1 +1,20 @@
+.row{
+  text-align: center;
+}
 
+.row:first-child{
+  margin-top: 100px;
+}
+
+.row:nth-child(2):not(.row.first){
+  margin-top: 20px;
+}
+
+.row:nth-child(2) *:not(.row.first *){
+  padding: 10px;
+}
+
+.row.first, .row.second, .row.third{
+  margin-top: 80px;
+  padding: 0 auto;
+}
